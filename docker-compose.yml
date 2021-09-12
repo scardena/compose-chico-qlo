@@ -1,0 +1,19 @@
+version: "3.3"
+services:
+  app:
+    build:
+      context: my-app
+
+  redis:
+    image: redis:latest
+    container_name: redis
+
+  mysql:
+    image: mysql:latest
+    container_name: mysql
+
+  es:
+    # no latest?
+    image: elasticsearch:7.14.1
+    container_name: es
+
